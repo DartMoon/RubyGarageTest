@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>Overvie</title>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/pushy.css' rel='stylesheet'>
+    <link href='css/jquery.scrollbar.css' rel='stylesheet'>
+    <link href='css/slick.css' rel='stylesheet'>
+    <link href='css/slick-theme.css' rel='stylesheet'>
+    <link href='css/reset.css' rel='stylesheet'>
+    <link href='css/font-awesome.min.css' rel='stylesheet'>
+    <link href='css/fonts.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>  <![endif]-->
+    <script src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js'></script>
+    <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
+  </head>
+  <body>
+    <!-- Side Menu -->
+    <nav class='pushy pushy-left'>
+      <button class='close-pushy pushy-link' href='#'>
+        <i aria-hidden='true' class='fa fa-times fa-2x'></i>
+      </button>
+      <div class='logo-menu'>
+        <a href='#'>
+          <img alt='Wanderist logo' src='img/logo.png'>
+        </a>
+      </div>
+      <ul class='top-pushy-list'>
+        <li class='top-pushy-list__item'>
+          <a class='top-pushy-list__link top-pushy-list__link_plane' href='#'>Itineraries</a>
+        </li>
+        <li class='top-pushy-list__item'>
+          <a class='top-pushy-list__link top-pushy-list__link_medal' href='#'>Contests</a>
+        </li>
+      </ul>
+      <ul class='login-list'>
+        <li class='login-list__name'>
+          <div class='ava-block'>
+            <img alt='Your avatar' src='img/ava.png'>
+          </div>
+          <p class='ava-block__text'>John Kennedy</p>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-plane'></i>
+            My itineraries
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            My contests
+            <img src='img/medal-min.png'>
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-cog'></i>
+            Settings
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            Payments
+            <img src='img/pay.png'>
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-power-off'></i>
+            Log out
+          </a>
+        </li>
+      </ul>
+      <ul class='top-pushy-list'>
+        <li class='top-pushy-list__item'>
+          <a class='top-pushy-list__link top-pushy-list__link_msg' href='#'>
+            Messages
+            <span class='top-pushy-list__link_val'>13</span>
+          </a>
+        </li>
+      </ul>
+      <div class='messeng-list none-msg'>
+        <p class='messeng-list__item text-center'>No messages in your inbox.</p>
+      </div>
+      <div class='messeng-list msg scrollbar-outer'>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Contest</li>
+          <li class='msg-list__item'>
+            Weekend in Verona from Trento
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>
+            The journey to the Old World – Prague, Czech Republic
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>Weekend in Verona from Trento</li>
+        </ul>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Itineraries</li>
+          <li class='msg-list__item'>
+            Italian Masterpiece
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>
+            Romantic journey to Northern Italy
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>The journey to the Old World – Prague, Czech Republic</li>
+        </ul>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Contest</li>
+          <li class='msg-list__item'>
+            Weekend in Verona from Trento
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>
+            The journey to the Old World – Prague, Czech Republic
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>Weekend in Verona from Trento</li>
+        </ul>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Itineraries</li>
+          <li class='msg-list__item'>
+            Italian Masterpiece
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>
+            Romantic journey to Northern Italy
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>The journey to the Old World – Prague, Czech Republic</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class='site-overlay'></div>
+    <!-- Header -->
+    <header>
+      <button class='pull-left menu-btn'>
+        <i aria-hidden='true' class='fa fa-bars fa-2x'></i>
+        <div class='menu-btn__msg'>
+          5
+        </div>
+      </button>
+      <ul class='pull-left page-list'>
+        <li class='page-list__item'>
+          <a class='page-list__link page-list__link_binocl' href='#'>Overview</a>
+        </li>
+        <li class='page-list__item active'>
+          <a class='page-list__link page-list__link_location' href='#'>Details</a>
+        </li>
+      </ul>
+      <ul class='pull-right share-list hidden-xs'>
+        <li class='share-list__item'>Share this itinerary:</li>
+        <li class='share-list__item'>
+          <a class='share-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-facebook-square fa-2x'></i>
+          </a>
+        </li>
+        <li class='share-list__item'>
+          <a class='share-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-twitter-square fa-2x'></i>
+          </a>
+        </li>
+      </ul>
+      <div class='clearfix'></div>
+    </header>
+    <!-- Header END -->
+    <main>
+      <!-- MAP -->
+      <div class='my-map'>
+        <div id='gmap_canvas'></div>
+      </div>
+      <!-- MAP end -->
+      <!-- Second side bar -->
+      <div class='side-bar'>
+        <div class='open-side-bar'>
+          <i aria-hidden='true' class='fa fa-angle-right'></i>
+        </div>
+        <div class='side-bar-outer scrollbar-outer'>
+          <!-- Date Slider -->
+          <div class='date-slider'>
+            <div>
+              <div class='date-slider__btn'>Jun 24</div>
+            </div>
+            <div>
+              <div class='date-slider__btn'>Jun 25</div>
+            </div>
+            <div>
+              <div class='date-slider__btn'>Jun 26</div>
+            </div>
+            <div>
+              <div class='date-slider__btn'>Jun 27</div>
+            </div>
+          </div>
+          <!-- Date Slider End -->
+          <!-- Date Slider Content -->
+          <div class='date-content-slider'>
+            <div>
+              <div class='about-location'>
+                <a aria-controls='first-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#first-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>10.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse in' id='first-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-taxi'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='second-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#second-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='second-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-bus'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='third-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#third-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='third-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class='about-location'>
+                <a aria-controls='first-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#first-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>10.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse in' id='first-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-taxi'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='second-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#second-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='second-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-bus'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='third-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#third-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='third-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class='about-location'>
+                <a aria-controls='first-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#first-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>10.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse in' id='first-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-taxi'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='second-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#second-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='second-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-bus'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='third-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#third-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='third-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class='about-location'>
+                <a aria-controls='first-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#first-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>10.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse in' id='first-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-taxi'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='second-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#second-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='second-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='taxi'>
+                <i aria-hidden='true' class='fa fa-bus'></i>
+              </div>
+              <div class='about-location'>
+                <a aria-controls='third-collaps' aria-expanded='false' class='collapse-btn' data-toggle='collapse' href='#third-collaps' role='button'>
+                  <h1 class='collapse-btn__name collapse-btn__name_food'>
+                    Trattoria Da Ropeton
+                    <time class='collapse-btn__time'>12.00</time>
+                  </h1>
+                  <h1 class='collapse-btn__location'>
+                    Via Fontana del Ferro, 1, Verona, Italy
+                  </h1>
+                </a>
+                <div class='collapse' id='third-collaps'>
+                  <div class='collapse-btn__block'>
+                    <img class='collapse-btn__img' src='img/collapse-img.png'>
+                    <p class='collapse-btn__text'>
+                      Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Date Slider Content End -->
+        </div>
+      </div>
+      <!-- Second side end -->
+    </main>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <script src='script/bootstrap.min.js'></script>
+    <script src='script/pushy.min.js'></script>
+    <script src='script/jquery.scrollbar.min.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <script src='script/slick.min.js'></script>
+    <script src='script/main.js'></script>
+  </body>
+</html>

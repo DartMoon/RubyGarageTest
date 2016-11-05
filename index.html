@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>Overvie</title>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/pushy.css' rel='stylesheet'>
+    <link href='css/jquery.scrollbar.css' rel='stylesheet'>
+    <link href='css/reset.css' rel='stylesheet'>
+    <link href='css/font-awesome.min.css' rel='stylesheet'>
+    <link href='css/fonts.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js'></script>
+      <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Side Menu -->
+    <nav class='pushy pushy-left'>
+      <button class='close-pushy pushy-link' href='#'>
+        <i aria-hidden='true' class='fa fa-times fa-2x'></i>
+      </button>
+      <div class='logo-menu'>
+        <a href='#'>
+          <img alt='Wanderist logo' src='img/logo.png'>
+        </a>
+      </div>
+      <ul class='top-pushy-list'>
+        <li class='top-pushy-list__item'>
+          <a class='top-pushy-list__link top-pushy-list__link_plane' href='#'>Itineraries</a>
+        </li>
+        <li class='top-pushy-list__item'>
+          <a class='top-pushy-list__link top-pushy-list__link_medal' href='#'>Contests</a>
+        </li>
+      </ul>
+      <ul class='login-list'>
+        <li class='login-list__name'>
+          <div class='ava-block'>
+            <img alt='Your avatar' src='img/ava.png'>
+          </div>
+          <p class='ava-block__text'>John Kennedy</p>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-plane'></i>
+            My itineraries
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            My contests
+            <img src='img/medal-min.png'>
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-cog'></i>
+            Settings
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            Payments
+            <img src='img/pay.png'>
+          </a>
+        </li>
+        <li class='login-list__item'>
+          <a class='login-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-power-off'></i>
+            Log out
+          </a>
+        </li>
+      </ul>
+      <ul class='top-pushy-list'>
+        <li class='top-pushy-list__item'>
+          <a class='top-pushy-list__link top-pushy-list__link_msg' href='#'>
+            Messages
+            <span class='top-pushy-list__link_val'>13</span>
+          </a>
+        </li>
+      </ul>
+      <div class='messeng-list none-msg'>
+        <p class='messeng-list__item text-center'>No messages in your inbox.</p>
+      </div>
+      <div class='messeng-list msg scrollbar-outer'>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Contest</li>
+          <li class='msg-list__item'>
+            Weekend in Verona from Trento
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>
+            The journey to the Old World – Prague, Czech Republic
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>Weekend in Verona from Trento</li>
+        </ul>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Itineraries</li>
+          <li class='msg-list__item'>
+            Italian Masterpiece
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>
+            Romantic journey to Northern Italy
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>The journey to the Old World – Prague, Czech Republic</li>
+        </ul>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Contest</li>
+          <li class='msg-list__item'>
+            Weekend in Verona from Trento
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>
+            The journey to the Old World – Prague, Czech Republic
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>Weekend in Verona from Trento</li>
+        </ul>
+        <ul class='msg-list'>
+          <li class='msg-list__head'>Itineraries</li>
+          <li class='msg-list__item'>
+            Italian Masterpiece
+            <span class='msg-list__item_val'>+2</span>
+          </li>
+          <li class='msg-list__item'>
+            Romantic journey to Northern Italy
+            <span class='msg-list__item_val'>+1</span>
+          </li>
+          <li class='msg-list__item'>The journey to the Old World – Prague, Czech Republic</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class='site-overlay'></div>
+    <!-- Header -->
+    <header>
+      <button class='pull-left menu-btn'>
+        <i aria-hidden='true' class='fa fa-bars fa-2x'></i>
+      </button>
+      <ul class='pull-left page-list'>
+        <li class='page-list__item active'>
+          <a class='page-list__link page-list__link_binocl' href='#'>Overview</a>
+        </li>
+        <li class='page-list__item'>
+          <a class='page-list__link page-list__link_location' href='#'>Details</a>
+        </li>
+      </ul>
+      <ul class='pull-right share-list hidden-xs'>
+        <li class='share-list__item'>Share this itinerary:</li>
+        <li class='share-list__item'>
+          <a class='share-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-facebook-square fa-2x'></i>
+          </a>
+        </li>
+        <li class='share-list__item'>
+          <a class='share-list__link' href='#'>
+            <i aria-hidden='true' class='fa fa-twitter-square fa-2x'></i>
+          </a>
+        </li>
+      </ul>
+      <div class='clearfix'></div>
+    </header>
+    <!-- Header END -->
+    <!-- Main -->
+    <main>
+      <!-- Banner -->
+      <div class='top-banner'>
+        <div class='top-banner-img'>
+          <img alt='Banner' class='hidden-xs' src='img/top-banner.png'>
+          <img alt='Banner' class='visible-xs' src='img/mobile-banner.png'>
+          <div class='container-fluid'>
+            <div class='container'>
+              <div class='row'>
+                <div class='top-banner__inner'>
+                  <h1 class='top-banner__inner_head-min'>ITINERARY</h1>
+                  <h1 class='top-banner__inner_head'>Trip to Fabulous Las Vegas</h1>
+                  <ul class='banner-list'>
+                    <li class='banner-list__item banner-list__item_time'>2 DAYS</li>
+                    <li class='banner-list__item banner-list__item_family'>
+                      <span class='hidden-xs'>family</span>
+                    </li>
+                    <li class='banner-list__item banner-list__item_food'>
+                      <span class='hidden-xs'>foodie</span>
+                    </li>
+                    <li class='banner-list__item banner-list__item_shop'>
+                      <span class='hidden-xs'>shopping</span>
+                    </li>
+                    <li class='banner-list__item banner-list__item_pet'>
+                      <span class='hidden-xs'>pet frienly</span>
+                    </li>
+                  </ul>
+                </div>
+                <ul class='share-list visible-xs'>
+                  <li class='share-list__item'>Share this itinerary:</li>
+                  <li class='share-list__item'>
+                    <a class='share-list__link' href='#'>
+                      <i aria-hidden='true' class='fa fa-facebook-square fa-2x'></i>
+                    </a>
+                  </li>
+                  <li class='share-list__item'>
+                    <a class='share-list__link' href='#'>
+                      <i aria-hidden='true' class='fa fa-twitter-square fa-2x'></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Banner end -->
+      <div class='container-fluid pad-0'>
+        <div class='container'>
+          <div class='row'>
+            <div class='overview-page'>
+              <div class='col-sm-5'>
+                <div class='media'>
+                  <div class='media-left media-top'>
+                    <img alt='Expert avatar' class='media-object' src='img/expert-avatar.png'>
+                  </div>
+                  <div class='media-body'>
+                    <h1 class='media-heading'>
+                      Local Expert
+                    </h1>
+                    <h1 class='media-name'>
+                      Audrey Tautou
+                    </h1>
+                    <i aria-hidden='true' class='fa fa-star active'></i>
+                    <i aria-hidden='true' class='fa fa-star active'></i>
+                    <i aria-hidden='true' class='fa fa-star active'></i>
+                    <i aria-hidden='true' class='fa fa-star'></i>
+                    <i aria-hidden='true' class='fa fa-star'></i>
+                  </div>
+                </div>
+                <div class='progress-block'>
+                  <table>
+                    <tr>
+                      <td>
+                        Buget
+                      </td>
+                      <td class='progress-td'>
+                        <div class='progress'>
+                          <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='60' class='progress-bar' role='progressbar' style='width: 60%;'></div>
+                        </div>
+                      </td>
+                      <td>
+                        Luxury
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Relaxed
+                      </td>
+                      <td class='progress-td'>
+                        <div class='progress'>
+                          <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='60' class='progress-bar' role='progressbar' style='width: 60%;'></div>
+                        </div>
+                      </td>
+                      <td>
+                        Active
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Desolate
+                      </td>
+                      <td class='progress-td'>
+                        <div class='progress'>
+                          <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='60' class='progress-bar' role='progressbar' style='width: 60%;'></div>
+                        </div>
+                      </td>
+                      <td>
+                        Crowdy
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class='col-sm-7'>
+                <div class='about-trip'>
+                  <h1 class='about-trip__head'>Overview</h1>
+                  <p class='about-trip__text'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
+                  </p>
+                  <p class='about-trip__text'>
+                    Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus... ut, vehicula eu diam.
+                  </p>
+                  <p class='about-trip__text'>
+                    Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+                  </p>
+                </div>
+              </div>
+              <div class='clearfix'></div>
+            </div>
+            <!-- Accordion panel -->
+            <div class='accordion-block'>
+              <div aria-multiselectable='true' class='panel-group' id='accordion' role='tablist'>
+                <!-- First panel -->
+                <div class='panel'>
+                  <div class='panel__top' id='headingOne' role='tab'>
+                    <h1>
+                      <a aria-controls='collapseOne' aria-expanded='true' class='panel__link' data-parent='#accordion' data-toggle='collapse' href='#collapseOne' role='button'>
+                        day1
+                        <div class='accordion-circle'>
+                          <i aria-hidden='true' class='fa fa-angle-down'></i>
+                        </div>
+                      </a>
+                    </h1>
+                  </div>
+                  <img class='shadow-line' src='img/shadow-line.png'>
+                  <div aria-labelledby='headingOne' class='panel-collapse collapse in' id='collapseOne' role='tabpanel'>
+                    <div class='panel-body hidden-xs'>
+                      <div class='col-sm-5 left-side'>
+                        <div class='about-trip-loc about-trip-loc_map'>
+                          <img class='about-trip-loc__img' src='img/map-loacation.png'>
+                        </div>
+                        <div class='about-trip-loc'>
+                          <img class='about-trip-loc__img' src='img/third-loc.png'>
+                          <p class='about-trip-loc__text'>
+                            Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum
+                          </p>
+                          <div class='panel__top'>
+                            <a class='about-trip-loc__link' href='#'>
+                              Show on the map
+                            </a>
+                          </div>
+                          <img class='shadow-line' src='img/shadow-line.png'>
+                        </div>
+                      </div>
+                      <!-- Time-line -->
+                      <div class='col-sm-2'>
+                        <div class='time-line'>
+                          <img class='time-line__main' src='img/time-line-main.png'>
+                        </div>
+                      </div>
+                      <div class='col-sm-5 right-side'>
+                        <div class='about-trip-loc vegas'>
+                          <img class='about-trip-loc__img' src='img/vegas.png'>
+                          <p class='about-trip-loc__text about-trip-loc__text_min'>
+                            Lorem ipsum dolor sit amet, consectetur
+                          </p>
+                          <div class='panel__top'>
+                            <a class='about-trip-loc__link' href='#'>
+                              Show on the map
+                            </a>
+                          </div>
+                          <img class='shadow-line' src='img/shadow-line.png'>
+                        </div>
+                        <div class='about-trip-loc'>
+                          <img class='about-trip-loc__img' src='img/venese.png'>
+                          <p class='about-trip-loc__text'>
+                            Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                          </p>
+                          <div class='panel__top'>
+                            <a class='about-trip-loc__link' href='#'>
+                              Show on the map
+                            </a>
+                          </div>
+                          <img class='shadow-line' src='img/shadow-line.png'>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- For Mobile -->
+                    <div class='panel-body visible-xs'>
+                      <div class='about-trip-loc about-trip-loc_map'>
+                        <img class='about-trip-loc__img' src='img/map-loacation.png'>
+                      </div>
+                      <!-- Time-line -->
+                      <div class='col-xs-2'>
+                        <div class='time-line'>
+                          <img class='time-line__main' src='img/time-line-mobile.png'>
+                        </div>
+                      </div>
+                      <div class='col-xs-10 pad-0'>
+                        <div class='about-trip-loc'>
+                          <img class='about-trip-loc__img' src='img/vegas.png'>
+                          <p class='about-trip-loc__text about-trip-loc__text_min'>
+                            Lorem ipsum dolor sit amet, consectetur
+                          </p>
+                        </div>
+                        <div class='about-trip-loc'>
+                          <img class='about-trip-loc__img' src='img/third-loc.png'>
+                          <p class='about-trip-loc__text'>
+                            Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum
+                          </p>
+                        </div>
+                        <div class='about-trip-loc'>
+                          <img class='about-trip-loc__img' src='img/venese.png'>
+                          <p class='about-trip-loc__text'>
+                            Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- For Mobile end -->
+                  </div>
+                </div>
+                <!-- Second panel -->
+                <div class='panel'>
+                  <div class='panel__top' id='headingTwo' role='tab'>
+                    <h1>
+                      <a aria-controls='collapseTwo' aria-expanded='false' class='panel__link' data-parent='#accordion' data-toggle='collapse' href='#collapseTwo' role='button'>
+                        day2
+                        <div class='accordion-circle'>
+                          <i aria-hidden='true' class='fa fa-angle-down'></i>
+                        </div>
+                      </a>
+                    </h1>
+                  </div>
+                  <img class='shadow-line' src='img/shadow-line.png'>
+                  <div aria-labelledby='headingTwo' class='panel-collapse collapse' id='collapseTwo' role='tabpanel'>
+                    <div class='panel-body'></div>
+                  </div>
+                </div>
+                <!-- Third panel -->
+                <div class='panel'>
+                  <div class='panel__top' id='headingThree' role='tab'>
+                    <h1>
+                      <a aria-controls='collapseOne' aria-expanded='false' class='panel__link' data-parent='#accordion' data-toggle='collapse' href='#collapseThree' role='button'>
+                        day3
+                        <div class='accordion-circle'>
+                          <i aria-hidden='true' class='fa fa-angle-down'></i>
+                        </div>
+                      </a>
+                    </h1>
+                  </div>
+                  <img class='shadow-line' src='img/shadow-line.png'>
+                  <div aria-labelledby='headingThree' class='panel-collapse collapse' id='collapseThree' role='tabpanel'>
+                    <div class='panel-body'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion panel end -->
+            <!-- New contest -->
+            <div class='new-contest'>
+              <img class='new-contest__img' src='img/line-map.png'>
+              <h1 class='new-contest__head hidden-xs'>Love this itinerary?</h1>
+              <h1 class='new-contest__head visible-xs'>Want more itineraries?</h1>
+              <p class='new-contest__text'>
+                Use it to create a new contest and local experts
+                <br>will get a better sense of the trip you want</br>
+              </p>
+              <button class='new-contest__btn hidden-xs'>Create A New contest</button>
+              <button class='new-contest__btn visible-xs'>browse itinerary</button>
+              <a class='new-contest__link hidden-xs' href='#'>Learn more</a>
+              <div class='clearfix'></div>
+            </div>
+            <!-- New contest end -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main end -->
+    <footer>
+      <div class='wrap'>
+        <div class='col-xs-4'>
+          <ul class='footer-list'>
+            <li class='footer-list__item'>
+              <a class='footer-list__link' href='#'>Home</a>
+            </li>
+            <li class='footer-list__item'>
+              <a class='footer-list__link' href='#'>Itineraries</a>
+            </li>
+            <li class='footer-list__item'>
+              <a class='footer-list__link' href='#'>About</a>
+            </li>
+          </ul>
+        </div>
+        <div class='col-xs-4'>
+          <a class='footer-logo' href='#'></a>
+        </div>
+        <div class='col-xs-4'>
+          <ul class='pull-right share-list_footer'>
+            <li class='share-list__item'>
+              <a class='share-list__link' href='#'>
+                <i aria-hidden='true' class='fa fa-facebook-square fa-2x'></i>
+              </a>
+            </li>
+            <li class='share-list__item'>
+              <a class='share-list__link' href='#'>
+                <i aria-hidden='true' class='fa fa-twitter-square fa-2x'></i>
+              </a>
+            </li>
+            <div class='clearfix'></div>
+            <li class='copyr'>(c) Wanderist 2014</li>
+          </ul>
+        </div>
+      </div>
+      <div class='clearfix'></div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <script src='script/bootstrap.min.js'></script>
+    <script src='script/pushy.min.js'></script>
+    <script src='script/jquery.scrollbar.min.js'></script>
+    <script src='script/slick.min.js'></script>
+    <script src='script/main.js'></script>
+  </body>
+</html>

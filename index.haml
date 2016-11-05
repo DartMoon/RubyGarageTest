@@ -1,0 +1,362 @@
+!!! 5
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %title Overvie
+    %link(rel="stylesheet" href="css/bootstrap.min.css")
+    %link(rel="stylesheet" href="css/pushy.css")
+    %link(rel="stylesheet" href="css/jquery.scrollbar.css")
+    %link(rel="stylesheet" href="css/reset.css")
+    %link(rel="stylesheet" href="css/font-awesome.min.css" )
+    %link(rel="stylesheet" href="css/fonts.css")
+    %link(rel="stylesheet" href="css/style.css")
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      %script(src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js")
+      %script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+  %body
+    /Side Menu
+    %nav.pushy.pushy-left
+      %button.close-pushy.pushy-link(href="#")
+        %i.fa.fa-times.fa-2x(aria-hidden="true")
+      .logo-menu
+        %a(href="#")
+          %img(src="img/logo.png" alt="Wanderist logo")
+
+      %ul.top-pushy-list
+        %li.top-pushy-list__item
+          %a.top-pushy-list__link.top-pushy-list__link_plane(href="#") Itineraries
+        %li.top-pushy-list__item
+          %a.top-pushy-list__link.top-pushy-list__link_medal(href="#") Contests
+
+      %ul.login-list
+        %li.login-list__name
+          .ava-block
+            %img(src="img/ava.png" alt="Your avatar")
+          %p.ava-block__text John Kennedy
+        %li.login-list__item
+          %a.login-list__link(href="#")
+            %i.fa.fa-plane(aria-hidden="true")
+            My itineraries
+        %li.login-list__item
+          %a.login-list__link(href="#")
+            My contests
+            %img(src="img/medal-min.png")
+        %li.login-list__item
+          %a.login-list__link(href="#")
+            %i.fa.fa-cog(aria-hidden="true")
+            Settings
+        %li.login-list__item
+          %a.login-list__link(href="#")
+            Payments
+            %img(src="img/pay.png")
+        %li.login-list__item
+          %a.login-list__link(href="#")
+            %i.fa.fa-power-off(aria-hidden="true")
+            Log out
+      %ul.top-pushy-list
+        %li.top-pushy-list__item
+          %a.top-pushy-list__link.top-pushy-list__link_msg(href="#")
+            Messages
+            %span.top-pushy-list__link_val 13
+
+      .messeng-list.none-msg
+        %p.messeng-list__item.text-center No messages in your inbox.
+      .messeng-list.msg.scrollbar-outer
+        %ul.msg-list
+          %li.msg-list__head Contest
+          %li.msg-list__item
+            Weekend in Verona from Trento
+            %span.msg-list__item_val +1
+          %li.msg-list__item
+            The journey to the Old World – Prague, Czech Republic
+            %span.msg-list__item_val +2
+          %li.msg-list__item Weekend in Verona from Trento
+        %ul.msg-list
+          %li.msg-list__head Itineraries
+          %li.msg-list__item
+            Italian Masterpiece
+            %span.msg-list__item_val +2
+          %li.msg-list__item
+            Romantic journey to Northern Italy
+            %span.msg-list__item_val +1
+          %li.msg-list__item The journey to the Old World – Prague, Czech Republic
+        %ul.msg-list
+          %li.msg-list__head Contest
+          %li.msg-list__item
+            Weekend in Verona from Trento
+            %span.msg-list__item_val +1
+          %li.msg-list__item
+            The journey to the Old World – Prague, Czech Republic
+            %span.msg-list__item_val +2
+          %li.msg-list__item Weekend in Verona from Trento
+        %ul.msg-list
+          %li.msg-list__head Itineraries
+          %li.msg-list__item
+            Italian Masterpiece
+            %span.msg-list__item_val +2
+          %li.msg-list__item
+            Romantic journey to Northern Italy
+            %span.msg-list__item_val +1
+          %li.msg-list__item The journey to the Old World – Prague, Czech Republic
+    /Site Overlay
+    .site-overlay
+    /Header
+    %header
+      %button.pull-left.menu-btn
+        %i.fa.fa-bars.fa-2x(aria-hidden="true")
+      %ul.pull-left.page-list
+        %li.page-list__item.active
+          %a.page-list__link.page-list__link_binocl(href="#") Overview
+        %li.page-list__item
+          %a.page-list__link.page-list__link_location(href="#") Details
+
+      %ul.pull-right.share-list.hidden-xs
+        %li.share-list__item Share this itinerary:
+        %li.share-list__item
+          %a.share-list__link(href="#")
+            %i.fa.fa-facebook-square.fa-2x(aria-hidden="true")
+        %li.share-list__item
+          %a.share-list__link(href="#")
+            %i.fa.fa-twitter-square.fa-2x(aria-hidden="true")
+      .clearfix
+    /Header END
+    /Main
+    %main
+      /Banner
+      .top-banner
+        .top-banner-img
+          %img.hidden-xs(src="img/top-banner.png" alt="Banner" )
+          %img.visible-xs(src="img/mobile-banner.png" alt="Banner" )
+          .container-fluid
+            .container
+              .row
+                .top-banner__inner
+                  %h1.top-banner__inner_head-min ITINERARY
+                  %h1.top-banner__inner_head Trip to Fabulous Las Vegas
+                  %ul.banner-list
+                    %li.banner-list__item.banner-list__item_time 2 DAYS
+                    %li.banner-list__item.banner-list__item_family
+                      %span.hidden-xs family
+                    %li.banner-list__item.banner-list__item_food
+                      %span.hidden-xs foodie
+                    %li.banner-list__item.banner-list__item_shop
+                      %span.hidden-xs shopping
+                    %li.banner-list__item.banner-list__item_pet
+                      %span.hidden-xs pet frienly
+                %ul.share-list.visible-xs
+                  %li.share-list__item Share this itinerary:
+                  %li.share-list__item
+                    %a.share-list__link(href="#")
+                      %i.fa.fa-facebook-square.fa-2x(aria-hidden="true")
+                  %li.share-list__item
+                    %a.share-list__link(href="#")
+                      %i.fa.fa-twitter-square.fa-2x(aria-hidden="true")
+      /Banner end
+      .container-fluid.pad-0
+        .container
+          .row
+            .overview-page
+              .col-sm-5
+                .media
+                  .media-left.media-top
+                    %img.media-object(src="img/expert-avatar.png" alt="Expert avatar")
+                  .media-body
+                    %h1.media-heading
+                      Local Expert
+                    %h1.media-name
+                      Audrey Tautou
+                    %i.fa.fa-star.active(aria-hidden="true")
+                    %i.fa.fa-star.active(aria-hidden="true")
+                    %i.fa.fa-star.active(aria-hidden="true")
+                    %i.fa.fa-star(aria-hidden="true")
+                    %i.fa.fa-star(aria-hidden="true")
+                .progress-block
+                  %table
+                    %tr
+                      %td
+                        Buget
+                      %td.progress-td
+                        .progress
+                          .progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 60%;")
+                      %td
+                        Luxury
+                    %tr
+                      %td
+                        Relaxed
+                      %td.progress-td
+                        .progress
+                          .progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                          style="width: 60%;")
+                      %td
+                        Active
+                    %tr
+                      %td
+                        Desolate
+                      %td.progress-td
+                        .progress
+                          .progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                          style="width: 60%;")
+                      %td
+                        Crowdy
+
+              .col-sm-7
+                .about-trip
+                  %h1.about-trip__head Overview
+                  %p.about-trip__text
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
+                  %p.about-trip__text
+                    Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus... ut, vehicula eu diam.
+                  %p.about-trip__text
+                    Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+              .clearfix
+
+            /Accordion panel
+            .accordion-block
+              .panel-group#accordion(role="tablist" aria-multiselectable="true")
+                /First panel
+                .panel
+                  .panel__top#headingOne(role="tab")
+                    %h1
+                      %a.panel__link(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne")
+                        day1
+                        .accordion-circle
+                          %i.fa.fa-angle-down(aria-hidden="true")
+                  %img.shadow-line(src="img/shadow-line.png" )
+                  .panel-collapse.collapse.in#collapseOne(role="tabpanel" aria-labelledby="headingOne")
+                    .panel-body.hidden-xs
+                      .col-sm-5.left-side
+                        .about-trip-loc.about-trip-loc_map
+                          %img.about-trip-loc__img(src="img/map-loacation.png")
+                        .about-trip-loc
+                          %img.about-trip-loc__img(src="img/third-loc.png")
+                          %p.about-trip-loc__text
+                            Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum
+                          .panel__top
+                            %a.about-trip-loc__link(href="#")
+                              Show on the map
+                          %img.shadow-line(src="img/shadow-line.png" )
+                      /Time-line
+                      .col-sm-2
+                        %div.time-line
+                          %img.time-line__main(src="img/time-line-main.png")
+                      .col-sm-5.right-side
+                        .about-trip-loc.vegas
+                          %img.about-trip-loc__img(src="img/vegas.png")
+                          %p.about-trip-loc__text.about-trip-loc__text_min
+                            Lorem ipsum dolor sit amet, consectetur
+                          .panel__top
+                            %a.about-trip-loc__link(href="#")
+                              Show on the map
+                          %img.shadow-line(src="img/shadow-line.png" )
+                        .about-trip-loc
+                          %img.about-trip-loc__img(src="img/venese.png")
+                          %p.about-trip-loc__text
+                            Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                          .panel__top
+                            %a.about-trip-loc__link(href="#")
+                              Show on the map
+                          %img.shadow-line(src="img/shadow-line.png" )
+                    /For Mobile
+                    .panel-body.visible-xs
+                      .about-trip-loc.about-trip-loc_map
+                        %img.about-trip-loc__img(src="img/map-loacation.png")
+                      /Time-line
+                      .col-xs-2
+                        %div.time-line
+                          %img.time-line__main(src="img/time-line-mobile.png")
+                      .col-xs-10.pad-0
+                        .about-trip-loc
+                          %img.about-trip-loc__img(src="img/vegas.png")
+                          %p.about-trip-loc__text.about-trip-loc__text_min
+                            Lorem ipsum dolor sit amet, consectetur
+                        .about-trip-loc
+                          %img.about-trip-loc__img(src="img/third-loc.png")
+                          %p.about-trip-loc__text
+                            Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum
+                        .about-trip-loc
+                          %img.about-trip-loc__img(src="img/venese.png")
+                          %p.about-trip-loc__text
+                            Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                    /For Mobile end
+                /Second panel
+                .panel
+                  .panel__top#headingTwo(role="tab")
+                    %h1
+                      %a.panel__link(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo")
+                        day2
+                        .accordion-circle
+                          %i.fa.fa-angle-down(aria-hidden="true")
+                  %img.shadow-line(src="img/shadow-line.png" )
+                  .panel-collapse.collapse#collapseTwo(role="tabpanel" aria-labelledby="headingTwo")
+                    .panel-body
+                /Third panel
+                .panel
+                  .panel__top#headingThree(role="tab")
+                    %h1
+                      %a.panel__link(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseOne")
+                        day3
+                        .accordion-circle
+                          %i.fa.fa-angle-down(aria-hidden="true")
+                  %img.shadow-line(src="img/shadow-line.png" )
+                  .panel-collapse.collapse#collapseThree(role="tabpanel" aria-labelledby="headingThree")
+                    .panel-body
+            /Accordion panel end
+            /New contest
+            .new-contest
+              %img.new-contest__img(src="img/line-map.png")
+              %h1.new-contest__head.hidden-xs Love this itinerary?
+              %h1.new-contest__head.visible-xs Want more itineraries?
+              %p.new-contest__text
+                Use it to create a new contest and local experts
+                %br will get a better sense of the trip you want
+              %button.new-contest__btn.hidden-xs Create A New contest
+              %button.new-contest__btn.visible-xs browse itinerary
+              %a.new-contest__link.hidden-xs(href="#") Learn more
+              .clearfix
+            /New contest end
+    /Main end
+    %footer
+      .wrap
+        .col-xs-4
+          %ul.footer-list
+            %li.footer-list__item
+              %a.footer-list__link(href="#") Home
+            %li.footer-list__item
+              %a.footer-list__link(href="#") Itineraries
+            %li.footer-list__item
+              %a.footer-list__link(href="#") About
+        .col-xs-4
+          %a.footer-logo(href="#")
+        .col-xs-4
+          %ul.pull-right.share-list_footer
+            %li.share-list__item
+              %a.share-list__link(href="#")
+                %i.fa.fa-facebook-square.fa-2x(aria-hidden="true")
+            %li.share-list__item
+              %a.share-list__link(href="#")
+                %i.fa.fa-twitter-square.fa-2x(aria-hidden="true")
+            .clearfix
+            %li.copyr (c) Wanderist 2014
+      .clearfix
+
+
+    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+    %script(src="script/bootstrap.min.js")
+    %script(src="script/pushy.min.js")
+    %script(src="script/jquery.scrollbar.min.js")
+
+    %script(src="script/slick.min.js")
+    %script(src="script/main.js")
+
+
+
+
+
+
